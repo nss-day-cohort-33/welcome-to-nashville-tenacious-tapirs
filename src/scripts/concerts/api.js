@@ -1,19 +1,3 @@
-// console.log("working");
-
-// function getConcerts() {
-//     return fetch(
-//   `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${concertsAppKeys.appKey}`
-// )
-//   .then(concerts => concerts.json())
-//   .then(parsedConcerts => {
-//     console.log(parsedConcerts._embedded.events);
-//   });
-// }
-
-// let concerts = getConcerts()
-
-// console.log(concerts)
-
 function getApiConcert(genre) {
   return fetch(
     `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${
@@ -25,22 +9,29 @@ function getApiConcert(genre) {
 function addApiData(concertItem) {
   getApiConcert(concertItem).then(concertArr => {
     console.log(concertArr);
-    let searchResults = `
-<ol>
-<li>${concertArr._embedded.events[0].name}: ${
-      concertArr._embedded.events[0]._embedded.venues.name
-    } <button id="addConcertsBtn">Add</button></li>
-<li>${concertArr._embedded.events[1].name}: ${
-      concertArr._embedded.events[1]._embedded.venues.name
-    } <button id="addConcertsBtn">Add</button></li>
-<li>${concertArr._embedded.events[2].name}: ${
-      concertArr._embedded.events[2]._embedded.venues.name
-    } <button id="addConcertsBtn">Add</button></li>
-<li>${concertArr._embedded.events[3].name}: ${
-      concertArr._embedded.events[3]._embedded.venues.name
-    } <button id="addConcertsBtn">Add</button></li>
-</ol>
-`;
-document.querySelector("#concertsContainer").innerHTML = searchResults;
+
+    // for (i = 0; i < 4; i++) {
+    //   let result = `<p>${i + 1}. ${concertArr._embedded.events[i].name} at ${
+    //     concertArr._embedded.events[i]._embedded.venues[0].name
+    //   } <button id="addConcertsBtn">Add</button></p>`;
+    //   document.querySelector("#concertsContainer").innerHTML += result;
+    // }
+        let searchResults = `
+    <ol>
+    <li>${concertArr._embedded.events[0].name} at ${
+          concertArr._embedded.events[0]._embedded.venues[0].name
+        } <button id="addConcertsBtn">Add</button></li>
+    <li>${concertArr._embedded.events[1].name} at ${
+          concertArr._embedded.events[1]._embedded.venues[0].name
+        } <button id="addConcertsBtn">Add</button></li>
+    <li>${concertArr._embedded.events[2].name} at ${
+          concertArr._embedded.events[2]._embedded.venues[0].name
+        } <button id="addConcertsBtn">Add</button></li>
+    <li>${concertArr._embedded.events[3].name} at ${
+          concertArr._embedded.events[3]._embedded.venues[0].name
+        } <button id="addConcertsBtn">Add</button></li>
+    </ol>
+    `;
+    document.querySelector("#concertsContainer").innerHTML = searchResults;
   });
 }
