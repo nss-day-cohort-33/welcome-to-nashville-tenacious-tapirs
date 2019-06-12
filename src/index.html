@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1>Welcome to Nashville</h1>
-    <form id="formInputs">
+    <div id="Inputs">
       <fieldset>
         <input
           type="text"
@@ -37,7 +37,7 @@
           placeholder="Concerts by genre"
         /><button id="searchConcertsBtn">Search</button>
       </fieldset>
-    </form>
+    </div>
     <h2>Results</h2>
     <div id="searchResultsDiv">
       <div id="parksContainer"></div>
@@ -52,5 +52,10 @@
       <p id="meetupsItenerary"></p>
       <p id="concertsItenerary"></p>
     </div>
+
+    <script src="scripts/keys.template.js"></script>
+    <script src="scripts/concerts/api.js"></script>
+    <script src="scripts/concerts/dom.js"></script>
+    <!-- <script src="scripts/concerts/main.js"></script> -->
   </body>
 </html>
