@@ -8,13 +8,15 @@
   </head>
   <body>
     <h1>Welcome to Nashville</h1>
-    <form id="formInputs">
+    <div id="Inputs">
       <fieldset>
-        <input
-          type="text"
-          id="searchParks"
-          placeholder="Parks by feature"
-        /><button id="searchParksBtn">Search</button>
+          <label>Parks By Features (select all that apply):</label>
+          <input type="checkbox" id="lakeFeature" name="parkFeature" value="lake">Lake</input>
+          <input type="checkbox" id="dogParkFeature" name="parkFeature" value="dogPark">Dog Park</input>
+          <input type="checkbox" id="hikingTrailFeature" name="parkFeature" value="hikingTrails">Hiking Trails</input>
+          <input type="checkbox" id="picnicShelter" name="parkFeature" value="picnicShelter">Picnic Shelter</input>
+          <input type="checkbox" id="historicFeatures" name="parkFeature" value="historicFeatures">Historic Features</input>
+        <button id="searchParksBtn">Search</button>
       </fieldset>
       <fieldset>
         <input
@@ -37,7 +39,7 @@
           placeholder="Concerts by genre"
         /><button id="searchConcertsBtn">Search</button>
       </fieldset>
-    </form>
+    </div>
     <h2>Results</h2>
     <div id="searchResultsDiv">
       <div id="parksContainer"></div>
@@ -52,5 +54,9 @@
       <p id="meetupsItenerary"></p>
       <p id="concertsItenerary"></p>
     </div>
+    <script src="scripts/keys.js"></script>
+    <script src="scripts/parks/api.js"></script>
+    <script src="scripts/parks/components.js"></script>
+    <script src="scripts/parks/dom.js"></script>
   </body>
 </html>
