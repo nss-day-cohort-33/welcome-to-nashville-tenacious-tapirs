@@ -1,5 +1,13 @@
 # Welcome to Nashville: Build an itinerary for a day trip to Music City
 
+## There are a few steps of action to take if you wish you use the API's in this app
+1. Before using this app, you will need to create an account with each of the following API's: [Metro Gov API](https://dev.socrata.com/foundry/data.nashville.gov/xbru-cfzi), [Zomato API](https://developers.zomato.com/api), [Eventbrite API](https://www.eventbrite.com/developer/v3/), [Ticketmaster API](https://developer.ticketmaster.com/products-and-docs/apis/getting-started/)
+1. For each API, once you have set up an account you will be given a key.
+1. Within the src/scripts directory of this app, you will find a keys.template.js file. 
+1. Reference the keys.template.js file to copy and paste it's contents into the keys.js file.
+1. Then replace the strings with your new key codes in their respective variables.
+1. Don't worry about messing with the gitignore. file.
+
 In this app users can search for four different things to do/visit in Nashville:
 * parks -- using the Nashville [Metro Gov API](https://dev.socrata.com/foundry/data.nashville.gov/xbru-cfzi)
 * restaurants -- using the [Zomato API](https://developers.zomato.com/api)
