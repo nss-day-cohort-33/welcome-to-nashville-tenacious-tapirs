@@ -15,7 +15,7 @@ function addRestaurantsToDom(restaurantComponent) {
 function createRestaurantsSearchComponent(restaurantsObj, i) {
     return `
     <div>
-    <p>${restaurantsObj.name}: ${restaurantsObj.location.address}</p> <button class="saveBtns" id="saveEntry-${i}">Save</button>
+    <p>${restaurantsObj.name}: ${restaurantsObj.location.address}</p> <button class="saveBtn" id="saveEntry-${i}">Save</button>
     </div>    
     `
 }
