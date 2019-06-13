@@ -3,13 +3,14 @@
 document.querySelector("#searchRestaurantsBtn").addEventListener("click", event => {
     let searchInput = document.querySelector("#searchRestaurants").value
     document.querySelector("#searchRestaurants").value = ""
+    document.querySelector("#searchResultsDiv").innerHTML = ""
     addAPIData(searchInput)
     })
 
 
 
 function addRestaurantsToDom(restaurantComponent) {
-    document.querySelector("#restaurantsContainer").innerHTML += restaurantComponent
+    document.querySelector("#searchResultsDiv").innerHTML += restaurantComponent
 }
 
 function createRestaurantsSearchComponent(restaurantsObj, i) {

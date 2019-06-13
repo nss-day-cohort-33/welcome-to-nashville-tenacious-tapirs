@@ -23,7 +23,7 @@ function addAPIData(cuisineItem) {
             for (let i=0; i<saveBtns.length; i++) {
                 saveBtns[i].addEventListener("click", (event) => {
                 addRestaurantsToItenerary(cuisinesArr[i].restaurant)
-                document.querySelector("#searchResultsDiv").innerHTML = ""
+                // document.querySelector("#searchResultsDiv").innerHTML = ""
                 })
             }
         })
