@@ -7,7 +7,7 @@
 //   } <button id="addConcertsBtn" class="saveConcertBtn">Save</button></p>`;
 //   document.querySelector("#concertsContainer").innerHTML += result;
 //   makeBtnWrk();
-// document.querySelector("#searchConcertsBtn").addEventListener("click", () => {
-//   document.querySelector("#concertContainer").innerHTML = "";
-// });
+document.querySelector("#searchConcertsBtn").addEventListener("click", () => {
+  document.querySelector("#concertContainer").innerHTML = "";
+});
 // }
