@@ -2,7 +2,7 @@
 
 document.querySelector("#searchRestaurantsBtn").addEventListener("click", event => {
     let searchInput = document.querySelector("#searchRestaurants").value
-    document.querySelector("#restaurantsContainer").innerHTML = ""
+    document.querySelector("#searchRestaurants").value = ""
     addAPIData(searchInput)
     })
 
@@ -25,7 +25,7 @@ function addRestaurantsToItenerary (restaurantsObj) {
     document.querySelector("#restaurantsItenerary").innerHTML += 
     `
     <section>
-        <h1>${restaurantsObj.name}</h1>
+        <h3>${restaurantsObj.name}</h3>
         <div>${restaurantsObj.location.address}</div>
     </section>
 `
