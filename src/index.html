@@ -1,78 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Welcome to Nashville</h1>
-    <div id="Inputs">
-      <fieldset>
-        <input
-          type="text"
-          id="searchParks"
-          placeholder="Parks by feature"
-        /><button id="searchParksBtn">Search</button>
-      </fieldset>
-      <fieldset>
-        <input
-          type="text"
-          id="searchRestaurants"
-          placeholder="Restaurants by food type"
-        /><button id="searchRestaurantsBtn">Search</button>
-      </fieldset>
-      <fieldset>
-        <select name="chooseCategory" id="searchMeetups" required>
-          <option value="118">Auto Boat & Air</option>
-          <option value="101">Business & Professional</option>
-          <option value="111">Charity & Causes</option>
-          <option value="113">Community & Culture</option>
-          <option value="115">Family & Education</option>
-          <option value="106">Fashion & Beauty</option>
-          <option value="104">Film, Media & Entertainment</option>
-          <option value="110">Food & Drink</option>
-          <option value="112">Government & Politics</option>
-          <option value="107">Health & Wellness</option>
-          <option value="119">Hobbies & Special Interest</option>
-          <option value="116">Holiday & Seasonal</option>
-          <option value="117">Home & Lifestyle</option>
-          <option value="103">Music</option>
-          <option value="199">Other</option>
-          <option value="105">Performing & Visual Arts</option>
-          <option value="120">School Activities</option>
-          <option value="102">Science & Tech</option>
-          <option value="114">Religion & Spirituality</option>
-          <option value="108">Sports & Fitness</option>
-          <option value="109">Travel & Outdoor</option>
 
-        </select><button id="searchMeetupsBtn">Search Category</button>
-      </fieldset>
-      <fieldset>
-        <input
-          type="text"
-          id="searchConcerts"
-          placeholder="Concerts by genre"
-        /><button id="searchConcertsBtn">Search</button>
-      </fieldset>
-    </div>
-    <h2>Results</h2>
-    <div id="searchResultsDiv">
-      <div id="parksContainer"></div>
-      <div id="restaurantsContainer"></div>
-      <div id="meetupsContainer"></div>
-      <div id="concertsContainer"></div>
-    </div>
-    <h2>My Itenerary</h2>
-    <div id="iteneraryDiv">
-      <p id="parksItenerary"></p>
-      <p id="restaurantsItenerary"></p>
-      <p id="meetupsItenerary"></p>
-      <p id="concertsItenerary"></p>
-    </div>
-    <script src="scripts/keys.js"></script>
-    <script src="scripts/meet-ups/api.js"></script>
-    <script src="scripts/meet-ups/components.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Welcome to Nashville</h1>
+  <div id="Inputs">
+    <fieldset>
+      <input type="text" id="searchParks" placeholder="Parks by feature" /><button id="searchParksBtn">Search</button>
+    </fieldset>
+    <fieldset>
+      <input type="text" id="searchRestaurants" placeholder="Restaurants by food type" /><button
+        id="searchRestaurantsBtn">Search</button>
+    </fieldset>
+    <fieldset>
+      <select name="chooseCategory" id="searchMeetups" required>
+        <option value="118">Auto Boat & Air</option>
+        <option value="101">Business & Professional</option>
+        <option value="111">Charity & Causes</option>
+        <option value="113">Community & Culture</option>
+        <option value="115">Family & Education</option>
+        <option value="106">Fashion & Beauty</option>
+        <option value="104">Film, Media & Entertainment</option>
+        <option value="110">Food & Drink</option>
+        <option value="112">Government & Politics</option>
+        <option value="107">Health & Wellness</option>
+        <option value="119">Hobbies & Special Interest</option>
+        <option value="116">Holiday & Seasonal</option>
+        <option value="117">Home & Lifestyle</option>
+        <option value="103">Music</option>
+        <option value="199">Other</option>
+        <option value="105">Performing & Visual Arts</option>
+        <option value="120">School Activities</option>
+        <option value="102">Science & Tech</option>
+        <option value="114">Religion & Spirituality</option>
+        <option value="108">Sports & Fitness</option>
+        <option value="109">Travel & Outdoor</option>
+
+      </select><button id="searchMeetupsBtn">Search Category</button>
+    </fieldset>
+    <fieldset>
+      <input type="text" id="searchConcerts" placeholder="Concerts by genre" /><button
+        id="searchConcertsBtn">Search</button>
+    </fieldset>
+  </div>
+  <h2>Results</h2>
+  <div id="searchResultsDiv">
+    <div id="parksContainer"></div>
+    <div id="restaurantsContainer"></div>
+    <div id="meetupsContainer"></div>
+    <div id="concertsContainer"></div>
+  </div>
+  <h2>My Itenerary</h2>
+  <div id="iteneraryDiv">
+    <p id="parksItenerary"></p>
+    <p id="restaurantsItenerary"></p>
+    <p id="meetupsItenerary"></p>
+    <p id="concertsItenerary"></p>
+  </div>
+  <script src="scripts/keys.js"></script>
+  <script src="scripts/meet-ups/api.js"></script>
+  <script src="scripts/meet-ups/components.js"></script>
+</body>
+
 </html>

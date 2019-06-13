@@ -2,7 +2,7 @@
 let searchInput = document.querySelector("#searchMeetups");
 
 // declare variable to target DOM element of my search results div
-let meetupsResultsContainer = document.querySelector("#meetupsContainer");
+let meetupsResultsContainer = document.querySelector("#searchResultsDiv");
 
 // target DOM element search button & add event listener for when user clicks to search events in their chosen category
 document.querySelector("#searchMeetupsBtn").addEventListener("click", event => {
