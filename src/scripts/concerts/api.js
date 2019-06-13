@@ -13,24 +13,29 @@ function addApiData(concertItem) {
     for (i = 0; i < 4; i++) {
       let result = `<p>${i + 1}. ${concertArr._embedded.events[i].name} at ${
         concertArr._embedded.events[i]._embedded.venues[0].name
-      } <button id="addConcertsBtn">Add</button></p>`;
-      // if {concertArr._embedded}
-      document.querySelector("#concertsContainer").innerHTML += result;
+      } <button id="addConcertsBtn">Save</button></p>`;
+      if (
+        concertArr._embedded.events[i]._embedded.venues[0].city.name.value === 
+          "Nashville"
+
+      )
+      console.log(concertArr._embedded.events[i]._embedded.venues[0].city.name.value)
+        document.querySelector("#concertsContainer").innerHTML += result;
     }
     //     let searchResults = `
     // <ol>
     // <li>${concertArr._embedded.events[0].name} at ${
     //       concertArr._embedded.events[0]._embedded.venues[0].name
-    //     } <button id="addConcertsBtn">Add</button></li>
+    //     } <button id="addConcertsBtn">Save</button></li>
     // <li>${concertArr._embedded.events[1].name} at ${
     //       concertArr._embedded.events[1]._embedded.venues[0].name
-    //     } <button id="addConcertsBtn">Add</button></li>
+    //     } <button id="addConcertsBtn">Save</button></li>
     // <li>${concertArr._embedded.events[2].name} at ${
     //       concertArr._embedded.events[2]._embedded.venues[0].name
-    //     } <button id="addConcertsBtn">Add</button></li>
+    //     } <button id="addConcertsBtn">Save</button></li>
     // <li>${concertArr._embedded.events[3].name} at ${
     //       concertArr._embedded.events[3]._embedded.venues[0].name
-    //     } <button id="addConcertsBtn">Add</button></li>
+    //     } <button id="addConcertsBtn">Save</button></li>
     // </ol>
     // `;
     // document.querySelector("#concertsContainer").innerHTML = searchResults;
