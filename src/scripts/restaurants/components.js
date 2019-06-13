@@ -20,3 +20,6 @@ function createRestaurantsSearchComponent(restaurantsObj) {
     `
 }
 
+// document.querySelector("#restaurantsSaveBtn").addEventListener("click", event => {
+//     let iteneraryResult = document.querySelector("#")
+// })
