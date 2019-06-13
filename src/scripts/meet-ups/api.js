@@ -10,14 +10,12 @@ document.querySelector("#searchMeetupsBtn").addEventListener("click", event => {
   console.log(searchInput.value);
 
   // Call my API and insert the category id variable to return results only for that category
-//  function callMyAPI() {
-  fetch(
-    `https://www.eventbriteapi.com/v3/events/search/?categories=${
-      searchInput.value
-    }&location.address=nashville&token=${eventBrite.privateKey}`
-  )
+//  function getMeetupEvent() {
+  fetch(`https://www.eventbriteapi.com/v3/events/search/?categories=${searchInput.value}&location.address=nashville&token=${eventBrite.privateKey}`)
     .then(events => events.json())
-    .then(eventsFromAPI => {
+// function getMeetUps ( )
+// getMeetupEvent (searchInput.value)
+.then(eventsFromAPI => {
 
       console.log(eventsFromAPI);
 
