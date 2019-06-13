@@ -1,6 +1,5 @@
 let selected = ""
 
-
 document.querySelector("#searchParksBtn").addEventListener("click", event =>{
     if (document.querySelector("#lakeFeature").checked){
         selected += "&lake=Yes"        
