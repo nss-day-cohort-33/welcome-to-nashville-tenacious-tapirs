@@ -10,10 +10,10 @@ const meetupsResultsList = function(eventsList) {
 };
 
 // target Save button in MeetUp Results events list Event Handler or Event Bubbling
-// const meetupSaveBtn = document.querySelector(".meetupsItenerary")
-// meetupSaveBtn.addEventListener("click" event => {
-
-// }
+const meetupSaveToItinerary = document.querySelector("#meetupsItenerary")
+meetupSaveToItinerary.addEventListener("click", event => {
+meetupSaveToItinerary.innerHTML = meetupsResultsList
+});
 // .addEventListener("click", event =>{}
 //     // meetupsResultsContainer.innerHTML = "";
 
