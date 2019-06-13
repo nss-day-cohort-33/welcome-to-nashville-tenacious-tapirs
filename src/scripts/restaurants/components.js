@@ -12,14 +12,21 @@ function addRestaurantsToDom(restaurantComponent) {
     document.querySelector("#restaurantsContainer").innerHTML += restaurantComponent
 }
 
-function createRestaurantsSearchComponent(restaurantsObj) {
+function createRestaurantsSearchComponent(restaurantsObj, i) {
     return `
     <div>
-    <p>${restaurantsObj.name}: ${restaurantsObj.location.address} <button id = "restaurantsSaveBtn">Save</button></p>
+    <p>${restaurantsObj.name}: ${restaurantsObj.location.address}</p> <button class="saveBtns" id="saveEntry-${i}">Save</button>
     </div>    
     `
 }
 
-// document.querySelector("#restaurantsSaveBtn").addEventListener("click", event => {
-//     let iteneraryResult = document.querySelector("#")
-// })
+// function to inject HTML into Itenerary div
+function addRestaurantsToItenerary (restaurantsObj) {
+    document.querySelector("#restaurantsItenerary").innerHTML += 
+    `
+    <section>
+        <h1>${restaurantsObj.name}</h1>
+        <div>${restaurantsObj.location.address}</div>
+    </section>
+`
+}
