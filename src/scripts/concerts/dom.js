@@ -1,5 +1,5 @@
 document.querySelector("#searchConcertsBtn").addEventListener("click", () => {
-  document.querySelector("#concertContainer").innerHTML = "";
+  document.querySelector("#searchResultsDiv").innerHTML = "";
 });
 
 document.querySelector("#searchConcertsBtn").addEventListener("click", () => {

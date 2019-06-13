@@ -25,7 +25,7 @@ function addApiData(concertItem) {
     } <button id="addConcertsBtn" class="saveConcertBtn">Save</button></li>
     </ol>
     `;
-    document.querySelector("#concertsContainer").innerHTML = searchResults;
+    document.querySelector("#searchResultsDiv").innerHTML = searchResults;
     makeBtnWrk();
     console.log(document.querySelectorAll(".saveConcertBtn"));
   });
