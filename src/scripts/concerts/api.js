@@ -15,12 +15,13 @@ function addApiData(concertItem) {
         concertArr._embedded.events[i]._embedded.venues[0].name
       } <button id="addConcertsBtn">Save</button></p>`;
       if (
-        concertArr._embedded.events[i]._embedded.venues[0].city.name.value === 
-          "Nashville"
-
+        concertArr._embedded.events[i]._embedded.venues[0].city.name.value ===
+        "Nashville"
       )
-      console.log(concertArr._embedded.events[i]._embedded.venues[0].city.name.value)
-        document.querySelector("#concertsContainer").innerHTML += result;
+        console.log(
+          concertArr._embedded.events[i]._embedded.venues[0].city.name
+        );
+      document.querySelector("#concertsContainer").innerHTML += result;
     }
     //     let searchResults = `
     // <ol>
