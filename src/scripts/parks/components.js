@@ -5,8 +5,9 @@ ${parkObj.mapped_location_address} ${parkObj.mapped_location_city}, ${parkObj.ma
 
  }
 
+ let parkResultsContainer = document.querySelector("#searchResultsDiv")
+
  function addParkResultsToDom(parksResult){
-    let parkResultsContainer = document.querySelector("#parksContainer")
     parkResultsContainer.innerHTML += parksResult
 }
 

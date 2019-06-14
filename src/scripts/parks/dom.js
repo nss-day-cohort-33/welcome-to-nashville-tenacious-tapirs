@@ -1,6 +1,9 @@
 let selected = ""
 
-document.querySelector("#searchParksBtn").addEventListener("click", event =>{
+const makeParksHappen = document.querySelector("#searchParksBtn").addEventListener("click", event =>{
+
+    parkResultsContainer.innerHTML = ""
+    selected = ""
     if (document.querySelector("#lakeFeature").checked){
         selected += "&lake=Yes"        
     }
@@ -17,9 +20,8 @@ document.querySelector("#searchParksBtn").addEventListener("click", event =>{
         selected += "&disc_golf=Yes"
     }
     addParksData(selected);
-    UnSelectAllFeatures();
+    unSelectAllFeatures();
     })
-
 
     function addParksData(userInput){
        getParks(userInput)
@@ -28,11 +30,12 @@ document.querySelector("#searchParksBtn").addEventListener("click", event =>{
             parksArr[i].idNum = i
                addParkResultsToDom(parksResultsComponent(parksArr[i]))
                grabParksButtons()
-           }
-       })
-    }
+                parkResultsContainer.innerHTML = "No results found"
+               }
+           })
+       }
 
-    function UnSelectAllFeatures(){
+    function unSelectAllFeatures(){
         const checkBox=document.getElementsByName("parkFeature");
         for(i=0; i<checkBox.length; i++){
             if(checkBox[i].type=='checkbox')
