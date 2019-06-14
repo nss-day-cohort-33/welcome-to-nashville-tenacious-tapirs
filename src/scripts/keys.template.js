@@ -1,19 +1,24 @@
-const parksAppKeys = {
-    appId: "your ID goes here",
-    appKey:"your Key goes here"
-}
-const restaurantsAppKeys = {
-    appId:"your ID goes here",
-    appKey:"your key goes here"
-}
-const eventBrite = {
-    appKey: "app key goes here",
-    appSecret: "app secret goes here",
-    privateKey: "private key goes here",
-    publicKey: "public key goes here"
-    }
 const concertsAppKeys = {
-    appId: "your ID goes here",
-    appKey:"your key goes here"
-}
+    appKey: "your key goes here"
+ }
+
+ const parksAppKeys = {
+    appToken:"your key goes here",
+ }
+
+ const restaurantsAppKeys = "your key goes here"
+
+ const eventBrite = {
+   appKey: "your key goes here",
+   appSecret: "your key goes here",
+   privateKey: "your key goes here",
+   publicKey: "your key goes here"
+   }
+
+
+
+
+
+
+
 
