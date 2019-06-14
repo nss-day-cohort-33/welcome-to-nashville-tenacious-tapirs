@@ -11,18 +11,18 @@ function addApiData(concertItem) {
     console.log(concertArr);
     let searchResults = `
     <ol>
-    <li>${concertArr._embedded.events[0].name} at ${
+    <li><p>${concertArr._embedded.events[0].name} at ${
       concertArr._embedded.events[0]._embedded.venues[0].name
-    } <button id="addConcertsBtn" class="saveConcertBtn">Save</button></li>
-    <li>${concertArr._embedded.events[1].name} at ${
+    } </p><button id="addConcertsBtn" class="saveConcertBtn">Save</button></li>
+    <li><p>${concertArr._embedded.events[1].name} at ${
       concertArr._embedded.events[1]._embedded.venues[0].name
-    } <button id="addConcertsBtn" class="saveConcertBtn">Save</button></li>
-    <li>${concertArr._embedded.events[2].name} at ${
+    } </p><button id="addConcertsBtn" class="saveConcertBtn">Save</button></li>
+    <li><p>${concertArr._embedded.events[2].name} at ${
       concertArr._embedded.events[2]._embedded.venues[0].name
-    } <button id="addConcertsBtn" class="saveConcertBtn">Save</button></li>
-    <li>${concertArr._embedded.events[3].name} at ${
+    } </p><button id="addConcertsBtn" class="saveConcertBtn">Save</button></li>
+    <li><p>${concertArr._embedded.events[3].name} at ${
       concertArr._embedded.events[3]._embedded.venues[0].name
-    } <button id="addConcertsBtn" class="saveConcertBtn">Save</button></li>
+    } </p><button id="addConcertsBtn" class="saveConcertBtn">Save</button></li>
     </ol>
     `;
     document.querySelector("#searchResultsDiv").innerHTML = searchResults;
