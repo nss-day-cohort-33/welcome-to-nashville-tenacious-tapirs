@@ -26,11 +26,10 @@ const makeParksHappen = document.querySelector("#searchParksBtn").addEventListen
     function addParksData(userInput){
        getParks(userInput)
        .then(parksArr => {
-           for (i = 0; i<4; i++) {
+           for (i = 0; i<5; i++) {
             parksArr[i].idNum = i
                addParkResultsToDom(parksResultsComponent(parksArr[i]))
                grabParksButtons()
-                parkResultsContainer.innerHTML = "No results found"
                }
            })
        }
